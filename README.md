@@ -1,0 +1,2 @@
+# wp-vm-theme
+ 
