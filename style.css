@@ -1,0 +1,161 @@
+/*
+Theme Name: Videograph Theme
+Author: Amjad 
+Version: 1.1
+
+*/
+
+body {
+    font-family: 'Your Local Font', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f8fa;
+    color: #333;
+}
+
+/* Header und Navigation */
+header {
+    background-color: #222;
+    color: white;
+    padding: 20px 0;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header .menu-toggle {
+    display: none;
+    background-color: #555;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    color: #00bcd4;
+}
+
+/* Mobilmenü */
+@media (max-width: 768px) {
+    header nav {
+        flex-direction: column;
+    }
+
+    header .menu {
+        display: none;
+        width: 100%;
+    }
+
+    header .menu-toggle {
+        display: block;
+    }
+    
+    header nav a {
+        display: block;
+        text-align: center;
+        padding: 10px 0;
+        border-bottom: 1px solid #333;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .menu {
+        display: none;
+    }
+}
+
+/* Layout */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    color: #222;
+    font-family: 'Your Local Font', sans-serif;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 28px;
+    margin-top: 40px;
+}
+
+button {
+    background-color: #00bcd4;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #008c9e;
+}
+
+/* Video und Portfolio */
+.portfolio-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.portfolio-item {
+    background-color: white;
+    padding: 15px;
+    border: 1px solid #ddd;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: calc(33.333% - 20px);
+}
+
+.portfolio-item h2 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.portfolio-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+    color: #aaa;
+}
+@font-face {
+    font-family: 'Your Local Font';
+    src: url('fonts/your-local-font.woff2') format('woff2');
+}
